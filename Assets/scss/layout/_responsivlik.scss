@@ -1,0 +1,40 @@
+@media only screen and (max-width: 783px) {
+  #yourdomain {
+    #all {
+      .yourdomain-info-telephone {
+        .yourdomain-info-telephone-info {
+          p {
+            display: none;
+          }
+        }
+        .yourdomain-info-telephone-telephone {
+          p {
+            display: none;
+          }
+        }
+      }
+      .yourdomain-twitter-facebook {
+        .yourdomain-twitter-facebook-twitter {
+          p {
+            display: none;
+          }
+        }
+        .yourdomain-twitter-facebook-facebook {
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  nav {
+    #all {
+      .navbar-home {
+        display: none;
+      }
+      .bar {
+        display: block;
+      }
+    }
+  }
+}

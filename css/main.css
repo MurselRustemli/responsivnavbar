@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+nav #all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: relative;
+}
+
+nav #all h1 {
+  width: 30%;
+  color: #007bff;
+}
+
+nav #all .navbar-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav #all .navbar-home p {
+  font-size: 20px;
+}
+
+nav #all .navbar-home .navbar-home-aboutus {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+nav #all .navbar-home .navbar-home-aboutus:hover .navbar-home-aboutus-cursor {
+  display: block;
+  background-color: white;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  display: none;
+  border-top: 2px solid #007bff;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor .navbar-home-aboutus-morelink {
+  position: relative;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor .navbar-home-aboutus-morelink .navbar-home-aboutus-morelink-cursor {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  border-top: 2px solid #007bff;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor .navbar-home-aboutus-morelink .navbar-home-aboutus-morelink-cursor p {
+  margin-left: 10px;
+}
+
+nav #all .navbar-home .navbar-home-aboutus .navbar-home-aboutus-cursor .navbar-home-aboutus-morelink:hover .navbar-home-aboutus-morelink-cursor {
+  display: block;
+  background-color: white;
+}
+
+nav #all .bar {
+  font-size: 20px;
+  display: none;
+  color: #007bff;
+}
+
+nav .navbar-baricon {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  position: fixed;
+}
+
+nav .navbar-baricon p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+nav .navbar-baricon .navbar-baricon-cursor {
+  position: absolute;
+  top: 20px;
+  font-size: 25px;
+  left: 200px;
+  cursor: pointer;
+}
+
+nav .navbar-baricon .navbar-baricon- {
+  display: flex;
+  cursor: pointer;
+  gap: 5px;
+  transition: 300ms;
+}
+
+nav .navbar-baricon .navbar-baricon- i {
+  margin-top: 20px;
+}
+
+nav .navbar-baricon .navbar-baricon- .navbar-baricon-team {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  height: 0px;
+  transition: 300ms;
+}
+
+.cursor {
+  top: 20px;
+  position: absolute;
+  height: auto;
+  width: 200px;
+  transition: 900ms;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #007bff;
+}
+
+.cursor p {
+  transition: 700ms;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.cursor p:hover {
+  transition: none;
+  background-color: #eef6ff;
+}
+
+.cursor-baricon {
+  height: auto !important;
+  transition: 300ms !important;
+  left: 0px !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 783px) {
+  #yourdomain #all .yourdomain-info-telephone .yourdomain-info-telephone-info p {
+    display: none;
+  }
+  #yourdomain #all .yourdomain-info-telephone .yourdomain-info-telephone-telephone p {
+    display: none;
+  }
+  #yourdomain #all .yourdomain-twitter-facebook .yourdomain-twitter-facebook-twitter p {
+    display: none;
+  }
+  #yourdomain #all .yourdomain-twitter-facebook .yourdomain-twitter-facebook-facebook p {
+    display: none;
+  }
+  nav #all .navbar-home {
+    display: none;
+  }
+  nav #all .bar {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
